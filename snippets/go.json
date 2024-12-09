@@ -1,0 +1,75 @@
+{
+	// Place your snippets for go here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"go-package": {
+		"prefix": "package",
+		"body": [
+			"package ${1}"
+		],
+		"description": "declare go package"
+	},
+	"go-import-m": {
+		"prefix": "import-m",
+		"body": [
+			"import (",
+			"\t\"${1}\"",
+			")"
+		],
+		"description": "multiple packages"
+	},
+	"go-import-s": {
+		"prefix": "import-s",
+		"body": [
+			"import \"${1}\""
+		],
+		"description": "single packages"
+	},
+	"go-func":{
+		"prefix": "func",
+		"body": [
+			"func ${1}()  {",
+			"\t${2}",
+			"}"
+		],
+		"description": "function"
+	},
+	"go-function-main": {
+		"prefix": "main",
+		"body": [
+			"func main()  {",
+			"\t${1}",
+			"}"
+		],
+		"description": "main function"
+	},
+	"println":{
+		"prefix": "pn",
+		"body":"fmt.Println($0)",
+		"description": "println"
+	},
+	"printf":{
+		"prefix": "pf",
+		"body": "fmt.Printf(\"$0\")",
+		"description": "printf"
+	},
+	"test-function":{
+		"prefix": "test",
+		"body": [
+			"func Test${1}(t *testing.T) {",
+			"    ${2}",
+			"}"
+		],
+		"description": "test function"
+	}
+}
