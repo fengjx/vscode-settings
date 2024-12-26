@@ -11,10 +11,10 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "go.formatTool": "gofmt",
+  "go.formatTool": "gofumpt",
   "go.useLanguageServer": true,
   "[go]": {
-    "editor.snippetSuggestions": "none",
+    "editor.snippetSuggestions": "inline",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.organizeImports": "always"
@@ -22,7 +22,7 @@
   },
   "gopls": {
     "usePlaceholders": true, // add parameter placeholders when completing a function
-    "wantCompletionDocumentation": true // for documentation in completion items
+    "completionDocumentation": true // for documentation in completion items
   },
   "editor.formatOnSaveMode": "file", // required to format on save
   "vs-code-prettier-eslint.prettierLast": false, // set as "true" to run 'prettier' last not first
@@ -85,7 +85,7 @@
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  "workbench.iconTheme": "vscode-icons",
+  "workbench.iconTheme": "material-icon-theme",
   "[xml]": {
     "editor.defaultFormatter": "DotJoshJohnson.xml"
   },
@@ -141,7 +141,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.accessibilitySupport": "off",
-  "workbench.colorTheme": "Default High Contrast",
+  "workbench.colorTheme": "Material Theme Palenight High Contrast",
   "markdown-preview-enhanced.codeBlockTheme": "vue.css",
   "markdown-preview-enhanced.previewTheme": "vue.css",
   "markdown-preview-enhanced.enablePreviewZenMode": false,
@@ -149,6 +149,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+    "editor.defaultFormatter": "vscode.json-language-features"
   }
 }
